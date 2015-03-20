@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<!--DOCTYPE htmlPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"-->
+<html>
+<head>
+    <title></title>
+    <script src="js/jquery-1.4.1-vsdoc.js" type="text/javascript"></script>
+    <script src="js/jquery-1.4.1-vsdoc.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/JavaScript.js"></script>
+    <script src="js/jquery-1.4.1.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript" >
+    var intVal = 0;
+   function subAjax() {
+            intVal++;
+            callAjaxEx("http://192.168.7.119/UsherTest/Default.aspx?DT=GETBookID&BID=" + document.getElementById("txtBookingID").value + "&v=" + intVal + "", 'subReturn')
+        }
+    </script>
+
+</head>
+<body>
+    <h3>Scan or Enter Manual Booking ID</h3>
+    <label>Enter your Booking ID</label>
+    <input type ="text" id ="txtBookingID"  /><br/>
+    <input type="button" id= "btnEnter" value="Enter" onclick="subAjax()"/>
+   </body>
+</html>
